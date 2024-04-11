@@ -1,0 +1,9 @@
+name: deploy
+on: [pull_request]
+jobs:
+  deploy:
+    name: Deploy Pages
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Set up pages
+      uses: actions/configure-pages@v5
